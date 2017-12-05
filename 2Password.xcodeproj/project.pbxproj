@@ -16,6 +16,7 @@
 		D362A1571F7B944D00E7AAA9 /* _PasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362A1561F7B944D00E7AAA9 /* _PasswordTests.swift */; };
 		D3C112701FD73EFA00BCBE59 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1126F1FD73EFA00BCBE59 /* MainRouter.swift */; };
 		D3D930A91FD73FE20097504A /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D930A81FD73FE20097504A /* GradientButton.swift */; };
+		D3D930AB1FD748680097504A /* SelfSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D930AA1FD748680097504A /* SelfSizingTableView.swift */; };
 		F889A2A22DACABCC60A9C5FF /* Pods_2PasswordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34A335C2E46742BE5382743 /* Pods_2PasswordTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		D362A1581F7B944D00E7AAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3C1126F1FD73EFA00BCBE59 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		D3D930A81FD73FE20097504A /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		D3D930AA1FD748680097504A /* SelfSizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				D3D930A81FD73FE20097504A /* GradientButton.swift */,
+				D3D930AA1FD748680097504A /* SelfSizingTableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D930AB1FD748680097504A /* SelfSizingTableView.swift in Sources */,
 				D362A1441F7B944D00E7AAA9 /* ViewController.swift in Sources */,
 				D3D930A91FD73FE20097504A /* GradientButton.swift in Sources */,
 				D362A1421F7B944D00E7AAA9 /* AppDelegate.swift in Sources */,
