@@ -6,6 +6,7 @@ target '2Password' do
   use_frameworks!
 
   # Pods for 2Password
+  pod 'SnapKit'
 
   target '2PasswordTests' do
     inherit! :search_paths
