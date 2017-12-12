@@ -22,6 +22,12 @@
 		D3D7F30A1FE0532B00C0B1B1 /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F3091FE0532B00C0B1B1 /* CreatePasswordViewController.swift */; };
 		D3D7F30C1FE062C700C0B1B1 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F30B1FE062C700C0B1B1 /* ThankYouViewController.swift */; };
 		D3D7F30E1FE0632900C0B1B1 /* SecurityEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F30D1FE0632900C0B1B1 /* SecurityEngine.swift */; };
+		D3D7F3101FE0719200C0B1B1 /* EncryptionTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F30F1FE0719200C0B1B1 /* EncryptionTransformer.swift */; };
+		D3D7F3121FE0729500C0B1B1 /* PasswordHashStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F3111FE0729500C0B1B1 /* PasswordHashStorage.swift */; };
+		D3D7F3141FE073A400C0B1B1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F3131FE073A400C0B1B1 /* CoreDataStack.swift */; };
+		D3D7F3181FE0747E00C0B1B1 /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F3161FE0747E00C0B1B1 /* NSData+Encryption.m */; };
+		D3D7F31C1FE0757600C0B1B1 /* 2Password.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F31A1FE0757600C0B1B1 /* 2Password.xcdatamodeld */; };
+		D3D7F31E1FE07C3C00C0B1B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D7F31D1FE07C3C00C0B1B1 /* Security.framework */; };
 		D3D930A91FD73FE20097504A /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D930A81FD73FE20097504A /* GradientButton.swift */; };
 		D3D930AB1FD748680097504A /* SelfSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D930AA1FD748680097504A /* SelfSizingTableView.swift */; };
 		F889A2A22DACABCC60A9C5FF /* Pods_2PasswordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34A335C2E46742BE5382743 /* Pods_2PasswordTests.framework */; };
@@ -62,6 +68,14 @@
 		D3D7F3091FE0532B00C0B1B1 /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
 		D3D7F30B1FE062C700C0B1B1 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
 		D3D7F30D1FE0632900C0B1B1 /* SecurityEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityEngine.swift; sourceTree = "<group>"; };
+		D3D7F30F1FE0719200C0B1B1 /* EncryptionTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionTransformer.swift; sourceTree = "<group>"; };
+		D3D7F3111FE0729500C0B1B1 /* PasswordHashStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordHashStorage.swift; sourceTree = "<group>"; };
+		D3D7F3131FE073A400C0B1B1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		D3D7F3161FE0747E00C0B1B1 /* NSData+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encryption.m"; sourceTree = "<group>"; };
+		D3D7F3171FE0747E00C0B1B1 /* NSData+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encryption.h"; sourceTree = "<group>"; };
+		D3D7F3191FE0749C00C0B1B1 /* 2Password-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2Password-Bridging-Header.h"; sourceTree = "<group>"; };
+		D3D7F31B1FE0757600C0B1B1 /* 2Password.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 2Password.xcdatamodel; sourceTree = "<group>"; };
+		D3D7F31D1FE07C3C00C0B1B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D3D930A81FD73FE20097504A /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		D3D930AA1FD748680097504A /* SelfSizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D7F31E1FE07C3C00C0B1B1 /* Security.framework in Frameworks */,
 				AA73DE98AB4885642C6D7FCF /* Pods_2Password.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +115,7 @@
 		A6BA93DEDC10603AC29F750A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3D7F31D1FE07C3C00C0B1B1 /* Security.framework */,
 				CADECAAE9415C6D862435D10 /* Pods_2Password.framework */,
 				D34A335C2E46742BE5382743 /* Pods_2PasswordTests.framework */,
 			);
@@ -151,9 +167,15 @@
 				D34736BB1FD87D5100768071 /* Routers */,
 				D34736B91FD87B5400768071 /* Defaults.swift */,
 				D3D7F30D1FE0632900C0B1B1 /* SecurityEngine.swift */,
+				D3D7F30F1FE0719200C0B1B1 /* EncryptionTransformer.swift */,
+				D3D7F3111FE0729500C0B1B1 /* PasswordHashStorage.swift */,
+				D3D7F3131FE073A400C0B1B1 /* CoreDataStack.swift */,
+				D3D7F3151FE0747E00C0B1B1 /* NSData+Encryption */,
 				D34736B41FD8757100768071 /* ViewControllers */,
 				D3D930A71FD73FC30097504A /* Views */,
 				D362A1451F7B944D00E7AAA9 /* Main.storyboard */,
+				D3D7F3191FE0749C00C0B1B1 /* 2Password-Bridging-Header.h */,
+				D3D7F31A1FE0757600C0B1B1 /* 2Password.xcdatamodeld */,
 				D362A1481F7B944D00E7AAA9 /* Assets.xcassets */,
 				D362A14A1F7B944D00E7AAA9 /* LaunchScreen.storyboard */,
 				D362A14D1F7B944D00E7AAA9 /* Info.plist */,
@@ -179,6 +201,15 @@
 				D34736B71FD8759B00768071 /* FirstLaunch.storyboard */,
 			);
 			path = FirstLaunch;
+			sourceTree = "<group>";
+		};
+		D3D7F3151FE0747E00C0B1B1 /* NSData+Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7F3161FE0747E00C0B1B1 /* NSData+Encryption.m */,
+				D3D7F3171FE0747E00C0B1B1 /* NSData+Encryption.h */,
+			);
+			path = "NSData+Encryption";
 			sourceTree = "<group>";
 		};
 		D3D930A71FD73FC30097504A /* Views */ = {
@@ -351,12 +382,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-2Password/Pods-2Password-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EncryptedCoreData/EncryptedCoreData.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainItemWrapper/KeychainItemWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EncryptedCoreData.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainItemWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,10 +442,15 @@
 				D3D930AB1FD748680097504A /* SelfSizingTableView.swift in Sources */,
 				D3D7F30E1FE0632900C0B1B1 /* SecurityEngine.swift in Sources */,
 				D34736BA1FD87B5400768071 /* Defaults.swift in Sources */,
+				D3D7F31C1FE0757600C0B1B1 /* 2Password.xcdatamodeld in Sources */,
 				D362A1441F7B944D00E7AAA9 /* ViewController.swift in Sources */,
+				D3D7F3101FE0719200C0B1B1 /* EncryptionTransformer.swift in Sources */,
 				D3D930A91FD73FE20097504A /* GradientButton.swift in Sources */,
 				D3D7F30A1FE0532B00C0B1B1 /* CreatePasswordViewController.swift in Sources */,
+				D3D7F3181FE0747E00C0B1B1 /* NSData+Encryption.m in Sources */,
+				D3D7F3141FE073A400C0B1B1 /* CoreDataStack.swift in Sources */,
 				D362A1421F7B944D00E7AAA9 /* AppDelegate.swift in Sources */,
+				D3D7F3121FE0729500C0B1B1 /* PasswordHashStorage.swift in Sources */,
 				D34736BD1FD87D5C00768071 /* RegisterRouter.swift in Sources */,
 				D34736B61FD8758B00768071 /* FirstLaunchViewController.swift in Sources */,
 				D3C112701FD73EFA00BCBE59 /* MainRouter.swift in Sources */,
@@ -574,6 +614,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.2password.2password;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "2Password/2Password-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -590,6 +631,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.2password.2password;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "2Password/2Password-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -662,6 +704,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3D7F31A1FE0757600C0B1B1 /* 2Password.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3D7F31B1FE0757600C0B1B1 /* 2Password.xcdatamodel */,
+			);
+			currentVersion = D3D7F31B1FE0757600C0B1B1 /* 2Password.xcdatamodel */;
+			path = 2Password.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D362A1361F7B944D00E7AAA9 /* Project object */;
 }

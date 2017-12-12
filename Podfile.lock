@@ -1,15 +1,35 @@
 PODS:
+  - EncryptedCoreData (3.1):
+    - SQLCipher (~> 3.4.0)
   - KeychainItemWrapper (1.2)
   - SnapKit (4.0.0)
+  - SQLCipher (3.4.1):
+    - SQLCipher/standard (= 3.4.1)
+  - SQLCipher/common (3.4.1)
+  - SQLCipher/standard (3.4.1):
+    - SQLCipher/common
 
 DEPENDENCIES:
+  - EncryptedCoreData (from `https://github.com/project-imas/encrypted-core-data.git`, commit `b97ffaf2f`)
   - KeychainItemWrapper
   - SnapKit
 
+EXTERNAL SOURCES:
+  EncryptedCoreData:
+    :commit: b97ffaf2f
+    :git: https://github.com/project-imas/encrypted-core-data.git
+
+CHECKOUT OPTIONS:
+  EncryptedCoreData:
+    :commit: b97ffaf2f
+    :git: https://github.com/project-imas/encrypted-core-data.git
+
 SPEC CHECKSUMS:
+  EncryptedCoreData: f6762fb05f88a52f36c5648659abc91b57f244b4
   KeychainItemWrapper: 67a240172ed669842bc6bc13ed554dcd50469fa2
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SQLCipher: 43d12c0eb9c57fb438749618fc3ce0065509a559
 
-PODFILE CHECKSUM: f32c47a3120b9ddf18d34d78e9f922e53bc847f7
+PODFILE CHECKSUM: 4e7a727f08b129c25bfce1fb961c7f1ad7f646fa
 
 COCOAPODS: 1.3.1

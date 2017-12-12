@@ -8,6 +8,9 @@ target '2Password' do
   # Pods for 2Password
   pod 'SnapKit'
   pod 'KeychainItemWrapper'
+  pod 'EncryptedCoreData',          # xcode 9 workaround
+  :git => 'https://github.com/project-imas/encrypted-core-data.git',
+  :commit => 'b97ffaf2f'
 
   target '2PasswordTests' do
     inherit! :search_paths
