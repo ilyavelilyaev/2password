@@ -27,8 +27,14 @@ class MainRouter {
     }
 
     private func beginRegisterRouting() {
-        let registerRouter = RegisterRouter()
+        let registerRouter = RegisterRouter(completion: { [unowned self] in
+            self.beginMainScreenRouting()
+        })
         registerRouter.beginRegistrationRouting()
+    }
+
+    private func beginMainScreenRouting() {
+        AppDelegate.shared.window?.rootViewController = UIViewController()
     }
     
 }

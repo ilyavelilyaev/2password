@@ -20,6 +20,8 @@
 		D362A1571F7B944D00E7AAA9 /* _PasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362A1561F7B944D00E7AAA9 /* _PasswordTests.swift */; };
 		D3C112701FD73EFA00BCBE59 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1126F1FD73EFA00BCBE59 /* MainRouter.swift */; };
 		D3D7F30A1FE0532B00C0B1B1 /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F3091FE0532B00C0B1B1 /* CreatePasswordViewController.swift */; };
+		D3D7F30C1FE062C700C0B1B1 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F30B1FE062C700C0B1B1 /* ThankYouViewController.swift */; };
+		D3D7F30E1FE0632900C0B1B1 /* SecurityEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F30D1FE0632900C0B1B1 /* SecurityEngine.swift */; };
 		D3D930A91FD73FE20097504A /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D930A81FD73FE20097504A /* GradientButton.swift */; };
 		D3D930AB1FD748680097504A /* SelfSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D930AA1FD748680097504A /* SelfSizingTableView.swift */; };
 		F889A2A22DACABCC60A9C5FF /* Pods_2PasswordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34A335C2E46742BE5382743 /* Pods_2PasswordTests.framework */; };
@@ -58,6 +60,8 @@
 		D362A1581F7B944D00E7AAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3C1126F1FD73EFA00BCBE59 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		D3D7F3091FE0532B00C0B1B1 /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
+		D3D7F30B1FE062C700C0B1B1 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
+		D3D7F30D1FE0632900C0B1B1 /* SecurityEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityEngine.swift; sourceTree = "<group>"; };
 		D3D930A81FD73FE20097504A /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		D3D930AA1FD748680097504A /* SelfSizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +150,7 @@
 				D362A1431F7B944D00E7AAA9 /* ViewController.swift */,
 				D34736BB1FD87D5100768071 /* Routers */,
 				D34736B91FD87B5400768071 /* Defaults.swift */,
+				D3D7F30D1FE0632900C0B1B1 /* SecurityEngine.swift */,
 				D34736B41FD8757100768071 /* ViewControllers */,
 				D3D930A71FD73FC30097504A /* Views */,
 				D362A1451F7B944D00E7AAA9 /* Main.storyboard */,
@@ -170,6 +175,7 @@
 			children = (
 				D34736B51FD8758B00768071 /* FirstLaunchViewController.swift */,
 				D3D7F3091FE0532B00C0B1B1 /* CreatePasswordViewController.swift */,
+				D3D7F30B1FE062C700C0B1B1 /* ThankYouViewController.swift */,
 				D34736B71FD8759B00768071 /* FirstLaunch.storyboard */,
 			);
 			path = FirstLaunch;
@@ -399,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D930AB1FD748680097504A /* SelfSizingTableView.swift in Sources */,
+				D3D7F30E1FE0632900C0B1B1 /* SecurityEngine.swift in Sources */,
 				D34736BA1FD87B5400768071 /* Defaults.swift in Sources */,
 				D362A1441F7B944D00E7AAA9 /* ViewController.swift in Sources */,
 				D3D930A91FD73FE20097504A /* GradientButton.swift in Sources */,
@@ -407,6 +414,7 @@
 				D34736BD1FD87D5C00768071 /* RegisterRouter.swift in Sources */,
 				D34736B61FD8758B00768071 /* FirstLaunchViewController.swift in Sources */,
 				D3C112701FD73EFA00BCBE59 /* MainRouter.swift in Sources */,
+				D3D7F30C1FE062C700C0B1B1 /* ThankYouViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

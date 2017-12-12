@@ -26,6 +26,7 @@ class CreatePasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         button.title = "Register"
+        navigationItem.title = "Registration"
     }
 
     @IBAction func buttonPressed(_ sender: Any) {
@@ -56,17 +57,6 @@ class CreatePasswordViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-//
-//    @IBAction func passwordEditingChanged(_ sender: Any) {
-//        if let p1 = passwordTF.text {
-//            passwordTF.isSecureTextEntry = !p1.isEmpty
-//        }
-//    }
-//
-//    @IBAction func passwordConfirmationEditingChanged(_ sender: Any) {
-//        if let p2 = passwordConfirmTF.text {
-//            passwordConfirmTF.isSecureTextEntry = !p2.isEmpty
-//        }
-//    }
+
 
 }

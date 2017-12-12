@@ -151,6 +151,42 @@
             </objects>
             <point key="canvasLocation" x="801" y="44"/>
         </scene>
+        <!--Thank You View Controller-->
+        <scene sceneID="Dxw-S6-gM2">
+            <objects>
+                <viewController storyboardIdentifier="ThankYouViewController" id="KQg-t1-pen" customClass="ThankYouViewController" customModule="_Password" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z1t-mr-TNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="FH7-Kq-fGy">
+                                <rect key="frame" x="70" y="242" width="235" height="183"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="253" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Non-Oh-rbq">
+                                        <rect key="frame" x="87.5" y="0.0" width="60" height="60"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvh-8B-c6r">
+                                        <rect key="frame" x="32" y="140" width="171" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FH7-Kq-fGy" firstAttribute="leading" secondItem="Z1t-mr-TNJ" secondAttribute="leading" constant="70" id="6CR-G0-ERb"/>
+                            <constraint firstItem="FH7-Kq-fGy" firstAttribute="centerY" secondItem="Z1t-mr-TNJ" secondAttribute="centerY" id="7ni-UL-2OS"/>
+                            <constraint firstItem="eB6-72-E27" firstAttribute="trailing" secondItem="FH7-Kq-fGy" secondAttribute="trailing" constant="70" id="f0u-TK-oHn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eB6-72-E27"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMb-cW-w3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="47"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Logo" width="60" height="60"/>
