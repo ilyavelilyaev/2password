@@ -1,12 +1,15 @@
 PODS:
+  - KeychainItemWrapper (1.2)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
+  - KeychainItemWrapper
   - SnapKit
 
 SPEC CHECKSUMS:
+  KeychainItemWrapper: 67a240172ed669842bc6bc13ed554dcd50469fa2
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 72dadfcee14cc17c50990f16329bafb9eaf53ea4
+PODFILE CHECKSUM: f32c47a3120b9ddf18d34d78e9f922e53bc847f7
 
 COCOAPODS: 1.3.1

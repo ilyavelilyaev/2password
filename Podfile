@@ -7,6 +7,7 @@ target '2Password' do
 
   # Pods for 2Password
   pod 'SnapKit'
+  pod 'KeychainItemWrapper'
 
   target '2PasswordTests' do
     inherit! :search_paths

@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 
+@objc
 class GradientButton: UIControl {
 
     var image: UIImage? {
