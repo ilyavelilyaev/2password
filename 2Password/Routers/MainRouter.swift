@@ -27,6 +27,8 @@ class MainRouter {
             guard let sself = self else { return }
             sself.beginMainScreenRouting()
         }
+        let nvc = UINavigationController(rootViewController: unlockVC)
+        AppDelegate.shared.window?.rootViewController = nvc
     }
 
     private func beginRegisterRouting() {

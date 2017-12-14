@@ -40,15 +40,6 @@ class CoreDataStack {
         model = NSManagedObjectModel(contentsOf: modelURL)!
 
         coordinator = EncryptedStore.make(model, passcode: password)!
-        do {
-            try coordinator.addPersistentStore(ofType: NSSQLiteStoreType,
-                                               configurationName: nil,
-                                               at: persistentStoreURL,
-                                               options: [NSMigratePersistentStoresAutomaticallyOption: true,
-                                                         NSInferMappingModelAutomaticallyOption: true])
-        } catch {
-            fatalError("Error migrating store: \(error.localizedDescription)")
-        }
 
         privateMOC = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
 

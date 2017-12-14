@@ -21,7 +21,6 @@
                                 <rect key="frame" x="70" y="198" width="235" height="40"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="11q-of-7SM" eventType="touchUpInside" id="fca-FB-Lyb"/>
                                     <action selector="unlockButtonPressed:" destination="11q-of-7SM" eventType="touchUpInside" id="vSx-SN-3Ds"/>
                                 </connections>
                             </view>
