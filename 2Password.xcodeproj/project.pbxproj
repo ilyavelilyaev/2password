@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AA73DE98AB4885642C6D7FCF /* Pods_2Password.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADECAAE9415C6D862435D10 /* Pods_2Password.framework */; };
+		D34722491FE2FB0700DD8230 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34722481FE2FB0700DD8230 /* Models.swift */; };
+		D347224C1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224A1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift */; };
+		D347224D1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */; };
 		D34736B61FD8758B00768071 /* FirstLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34736B51FD8758B00768071 /* FirstLaunchViewController.swift */; };
 		D34736B81FD8759B00768071 /* FirstLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34736B71FD8759B00768071 /* FirstLaunch.storyboard */; };
 		D34736BA1FD87B5400768071 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34736B91FD87B5400768071 /* Defaults.swift */; };
@@ -49,6 +52,9 @@
 		AEB468969705240BA72691F2 /* Pods-2Password.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2Password.release.xcconfig"; path = "Pods/Target Support Files/Pods-2Password/Pods-2Password.release.xcconfig"; sourceTree = "<group>"; };
 		C7223642196412B541D7F0B9 /* Pods-2Password.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2Password.debug.xcconfig"; path = "Pods/Target Support Files/Pods-2Password/Pods-2Password.debug.xcconfig"; sourceTree = "<group>"; };
 		CADECAAE9415C6D862435D10 /* Pods_2Password.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2Password.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34722481FE2FB0700DD8230 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D347224A1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedDataItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedDataItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D34736B51FD8758B00768071 /* FirstLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchViewController.swift; sourceTree = "<group>"; };
 		D34736B71FD8759B00768071 /* FirstLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstLaunch.storyboard; sourceTree = "<group>"; };
 		D34736B91FD87B5400768071 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
@@ -122,6 +128,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D34722471FE2FADD00DD8230 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D347224A1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift */,
+				D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */,
+				D34722481FE2FB0700DD8230 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D34736B41FD8757100768071 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +186,7 @@
 				D3D7F30F1FE0719200C0B1B1 /* EncryptionTransformer.swift */,
 				D3D7F3111FE0729500C0B1B1 /* PasswordHashStorage.swift */,
 				D3D7F3131FE073A400C0B1B1 /* CoreDataStack.swift */,
+				D34722471FE2FADD00DD8230 /* Models */,
 				D3D7F3151FE0747E00C0B1B1 /* NSData+Encryption */,
 				D34736B41FD8757100768071 /* ViewControllers */,
 				D3D930A71FD73FC30097504A /* Views */,
@@ -441,6 +458,7 @@
 			files = (
 				D3D930AB1FD748680097504A /* SelfSizingTableView.swift in Sources */,
 				D3D7F30E1FE0632900C0B1B1 /* SecurityEngine.swift in Sources */,
+				D34722491FE2FB0700DD8230 /* Models.swift in Sources */,
 				D34736BA1FD87B5400768071 /* Defaults.swift in Sources */,
 				D3D7F31C1FE0757600C0B1B1 /* 2Password.xcdatamodeld in Sources */,
 				D362A1441F7B944D00E7AAA9 /* ViewController.swift in Sources */,
@@ -450,9 +468,11 @@
 				D3D7F3181FE0747E00C0B1B1 /* NSData+Encryption.m in Sources */,
 				D3D7F3141FE073A400C0B1B1 /* CoreDataStack.swift in Sources */,
 				D362A1421F7B944D00E7AAA9 /* AppDelegate.swift in Sources */,
+				D347224C1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift in Sources */,
 				D3D7F3121FE0729500C0B1B1 /* PasswordHashStorage.swift in Sources */,
 				D34736BD1FD87D5C00768071 /* RegisterRouter.swift in Sources */,
 				D34736B61FD8758B00768071 /* FirstLaunchViewController.swift in Sources */,
+				D347224D1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift in Sources */,
 				D3C112701FD73EFA00BCBE59 /* MainRouter.swift in Sources */,
 				D3D7F30C1FE062C700C0B1B1 /* ThankYouViewController.swift in Sources */,
 			);
