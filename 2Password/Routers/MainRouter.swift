@@ -23,7 +23,10 @@ class MainRouter {
     }
 
     private func beginUnlockRouting() {
-
+        let unlockVC = UnlockViewController.instantiate { [weak self] in
+            guard let sself = self else { return }
+            sself.beginMainScreenRouting()
+        }
     }
 
     private func beginRegisterRouting() {

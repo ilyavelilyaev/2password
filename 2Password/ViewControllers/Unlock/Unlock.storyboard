@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Unlock View Controller-->
+        <scene sceneID="Yma-tE-9HZ">
+            <objects>
+                <viewController storyboardIdentifier="UnlockViewController" id="11q-of-7SM" customClass="UnlockViewController" customModule="_Password" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gqY-Es-Gs8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="yDq-85-csJ" customClass="GradientButton" customModule="_Password" customModuleProvider="target">
+                                <rect key="frame" x="70" y="198" width="235" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="11q-of-7SM" eventType="touchUpInside" id="fca-FB-Lyb"/>
+                                    <action selector="unlockButtonPressed:" destination="11q-of-7SM" eventType="touchUpInside" id="vSx-SN-3Ds"/>
+                                </connections>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rN9-9H-4Hw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="108"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jns-Sm-ZTg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="xZ5-E4-6d7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uki-6E-09D">
+                                        <rect key="frame" x="0.0" y="54" width="375" height="54"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egQ-mo-FPZ">
+                                                <rect key="frame" x="0.0" y="18.5" width="375" height="17"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="egQ-mo-FPZ" firstAttribute="leading" secondItem="Uki-6E-09D" secondAttribute="leading" id="7UI-U9-dir"/>
+                                            <constraint firstAttribute="trailing" secondItem="egQ-mo-FPZ" secondAttribute="trailing" id="SIs-e6-iYd"/>
+                                            <constraint firstItem="egQ-mo-FPZ" firstAttribute="centerY" secondItem="Uki-6E-09D" secondAttribute="centerY" id="rM8-9W-pdL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Uki-6E-09D" firstAttribute="height" secondItem="jns-Sm-ZTg" secondAttribute="height" id="pVJ-HY-eDg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CRn-RO-WFH" firstAttribute="trailing" secondItem="yDq-85-csJ" secondAttribute="trailing" constant="70" id="1C7-tj-he5"/>
+                            <constraint firstItem="CRn-RO-WFH" firstAttribute="trailing" secondItem="rN9-9H-4Hw" secondAttribute="trailing" id="49B-bf-lig"/>
+                            <constraint firstItem="rN9-9H-4Hw" firstAttribute="top" secondItem="CRn-RO-WFH" secondAttribute="top" id="Oag-J7-iKO"/>
+                            <constraint firstItem="rN9-9H-4Hw" firstAttribute="leading" secondItem="CRn-RO-WFH" secondAttribute="leading" id="SE6-V9-XaK"/>
+                            <constraint firstItem="yDq-85-csJ" firstAttribute="leading" secondItem="CRn-RO-WFH" secondAttribute="leading" constant="70" id="mQn-yo-IGf"/>
+                            <constraint firstItem="yDq-85-csJ" firstAttribute="top" secondItem="rN9-9H-4Hw" secondAttribute="bottom" constant="70" id="qEO-uA-6yI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CRn-RO-WFH"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="yDq-85-csJ" id="qAc-5z-hDd"/>
+                        <outlet property="passwordTF" destination="egQ-mo-FPZ" id="gOK-aR-Yj0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sL0-Si-UPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="44"/>
+        </scene>
+    </scenes>
+</document>

@@ -37,6 +37,7 @@ final class RegisterRouter {
 
     private func register(password: String) {
         SecurityEngine.shared.register(with: password)
+        Defaults.shared.registered = true
     }
     
     private func showThankYou() {

@@ -29,7 +29,7 @@ final class SecurityEngine {
     }
 
     func lock() {
-
+        CoreDataStack.shared = nil
     }
 
     func changePassword(old: String, new: String) -> Bool {

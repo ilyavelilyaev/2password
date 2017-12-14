@@ -22,6 +22,10 @@ class CoreDataStack {
         shared = CoreDataStack(password: password)
     }
 
+    static func lock() {
+        shared = nil
+    }
+
     private let persistentStoreURL: URL = {
         let modelName = "2Password"
         let documentURLs = FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory,

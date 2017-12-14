@@ -11,6 +11,8 @@
 		D34722491FE2FB0700DD8230 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34722481FE2FB0700DD8230 /* Models.swift */; };
 		D347224C1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224A1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift */; };
 		D347224D1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */; };
+		D34722501FE321E400DD8230 /* UnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224F1FE321E400DD8230 /* UnlockViewController.swift */; };
+		D34722521FE321E900DD8230 /* Unlock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34722511FE321E900DD8230 /* Unlock.storyboard */; };
 		D34736B61FD8758B00768071 /* FirstLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34736B51FD8758B00768071 /* FirstLaunchViewController.swift */; };
 		D34736B81FD8759B00768071 /* FirstLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34736B71FD8759B00768071 /* FirstLaunch.storyboard */; };
 		D34736BA1FD87B5400768071 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34736B91FD87B5400768071 /* Defaults.swift */; };
@@ -55,6 +57,8 @@
 		D34722481FE2FB0700DD8230 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		D347224A1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedDataItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedDataItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D347224F1FE321E400DD8230 /* UnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockViewController.swift; sourceTree = "<group>"; };
+		D34722511FE321E900DD8230 /* Unlock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Unlock.storyboard; sourceTree = "<group>"; };
 		D34736B51FD8758B00768071 /* FirstLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchViewController.swift; sourceTree = "<group>"; };
 		D34736B71FD8759B00768071 /* FirstLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstLaunch.storyboard; sourceTree = "<group>"; };
 		D34736B91FD87B5400768071 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
@@ -138,9 +142,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D347224E1FE321CD00DD8230 /* Unlock */ = {
+			isa = PBXGroup;
+			children = (
+				D347224F1FE321E400DD8230 /* UnlockViewController.swift */,
+				D34722511FE321E900DD8230 /* Unlock.storyboard */,
+			);
+			path = Unlock;
+			sourceTree = "<group>";
+		};
 		D34736B41FD8757100768071 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D347224E1FE321CD00DD8230 /* Unlock */,
 				D3D7F3081FE0524900C0B1B1 /* FirstLaunch */,
 			);
 			path = ViewControllers;
@@ -331,6 +345,7 @@
 				D362A14C1F7B944D00E7AAA9 /* LaunchScreen.storyboard in Resources */,
 				D362A1491F7B944D00E7AAA9 /* Assets.xcassets in Resources */,
 				D362A1471F7B944D00E7AAA9 /* Main.storyboard in Resources */,
+				D34722521FE321E900DD8230 /* Unlock.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +483,7 @@
 				D3D7F3181FE0747E00C0B1B1 /* NSData+Encryption.m in Sources */,
 				D3D7F3141FE073A400C0B1B1 /* CoreDataStack.swift in Sources */,
 				D362A1421F7B944D00E7AAA9 /* AppDelegate.swift in Sources */,
+				D34722501FE321E400DD8230 /* UnlockViewController.swift in Sources */,
 				D347224C1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift in Sources */,
 				D3D7F3121FE0729500C0B1B1 /* PasswordHashStorage.swift in Sources */,
 				D34736BD1FD87D5C00768071 /* RegisterRouter.swift in Sources */,
