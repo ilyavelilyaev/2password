@@ -49,8 +49,8 @@ private extension SecurityEngine {
 
     func sha256(string: String) -> String {
         guard let data = string.data(using: .utf8) else { return "" }
-        let sha = String.init(data: sha256(data: data), encoding: .utf8)
-        return sha ?? ""
+        let sha = sha256(data: data).base64EncodedString()
+        return sha 
     }
 
     func sha256(data: Data) -> Data {

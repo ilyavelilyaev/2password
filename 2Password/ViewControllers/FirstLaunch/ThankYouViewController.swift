@@ -18,6 +18,7 @@ class ThankYouViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        navigationController?.navigationBar.isHidden = true
     }
 
 }

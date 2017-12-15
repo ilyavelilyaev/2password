@@ -13,6 +13,7 @@
 		D347224D1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */; };
 		D34722501FE321E400DD8230 /* UnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224F1FE321E400DD8230 /* UnlockViewController.swift */; };
 		D34722521FE321E900DD8230 /* Unlock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34722511FE321E900DD8230 /* Unlock.storyboard */; };
+		D34722571FE3AB9A00DD8230 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34722561FE3AB9A00DD8230 /* Main.xcassets */; };
 		D34736B61FD8758B00768071 /* FirstLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34736B51FD8758B00768071 /* FirstLaunchViewController.swift */; };
 		D34736B81FD8759B00768071 /* FirstLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34736B71FD8759B00768071 /* FirstLaunch.storyboard */; };
 		D34736BA1FD87B5400768071 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34736B91FD87B5400768071 /* Defaults.swift */; };
@@ -23,6 +24,11 @@
 		D362A1491F7B944D00E7AAA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D362A1481F7B944D00E7AAA9 /* Assets.xcassets */; };
 		D362A14C1F7B944D00E7AAA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D362A14A1F7B944D00E7AAA9 /* LaunchScreen.storyboard */; };
 		D362A1571F7B944D00E7AAA9 /* _PasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362A1561F7B944D00E7AAA9 /* _PasswordTests.swift */; };
+		D3A68C8C1FE3AD2800147BE1 /* CatalogueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A68C8B1FE3AD2800147BE1 /* CatalogueViewController.swift */; };
+		D3A68C8E1FE3ADA000147BE1 /* MainCatalogueCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A68C8D1FE3ADA000147BE1 /* MainCatalogueCellView.swift */; };
+		D3A68C901FE3AF3500147BE1 /* CatalogueExpandedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A68C8F1FE3AF3500147BE1 /* CatalogueExpandedCellView.swift */; };
+		D3A68C931FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A68C911FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.swift */; };
+		D3A68C941FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A68C921FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.xib */; };
 		D3C112701FD73EFA00BCBE59 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1126F1FD73EFA00BCBE59 /* MainRouter.swift */; };
 		D3D7F30A1FE0532B00C0B1B1 /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F3091FE0532B00C0B1B1 /* CreatePasswordViewController.swift */; };
 		D3D7F30C1FE062C700C0B1B1 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7F30B1FE062C700C0B1B1 /* ThankYouViewController.swift */; };
@@ -59,6 +65,7 @@
 		D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedDataItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D347224F1FE321E400DD8230 /* UnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockViewController.swift; sourceTree = "<group>"; };
 		D34722511FE321E900DD8230 /* Unlock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Unlock.storyboard; sourceTree = "<group>"; };
+		D34722561FE3AB9A00DD8230 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
 		D34736B51FD8758B00768071 /* FirstLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchViewController.swift; sourceTree = "<group>"; };
 		D34736B71FD8759B00768071 /* FirstLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstLaunch.storyboard; sourceTree = "<group>"; };
 		D34736B91FD87B5400768071 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
@@ -74,6 +81,11 @@
 		D362A1521F7B944D00E7AAA9 /* 2PasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2PasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D362A1561F7B944D00E7AAA9 /* _PasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _PasswordTests.swift; sourceTree = "<group>"; };
 		D362A1581F7B944D00E7AAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A68C8B1FE3AD2800147BE1 /* CatalogueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueViewController.swift; sourceTree = "<group>"; };
+		D3A68C8D1FE3ADA000147BE1 /* MainCatalogueCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCatalogueCellView.swift; sourceTree = "<group>"; };
+		D3A68C8F1FE3AF3500147BE1 /* CatalogueExpandedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueExpandedCellView.swift; sourceTree = "<group>"; };
+		D3A68C911FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedCatalogueTableViewCell.swift; sourceTree = "<group>"; };
+		D3A68C921FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandedCatalogueTableViewCell.xib; sourceTree = "<group>"; };
 		D3C1126F1FD73EFA00BCBE59 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		D3D7F3091FE0532B00C0B1B1 /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
 		D3D7F30B1FE062C700C0B1B1 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
@@ -151,9 +163,20 @@
 			path = Unlock;
 			sourceTree = "<group>";
 		};
+		D34722551FE3AB3500DD8230 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D362A1451F7B944D00E7AAA9 /* Main.storyboard */,
+				D34722561FE3AB9A00DD8230 /* Main.xcassets */,
+				D3A68C8A1FE3AD1800147BE1 /* Catalogue */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		D34736B41FD8757100768071 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D34722551FE3AB3500DD8230 /* Main */,
 				D347224E1FE321CD00DD8230 /* Unlock */,
 				D3D7F3081FE0524900C0B1B1 /* FirstLaunch */,
 			);
@@ -204,7 +227,6 @@
 				D3D7F3151FE0747E00C0B1B1 /* NSData+Encryption */,
 				D34736B41FD8757100768071 /* ViewControllers */,
 				D3D930A71FD73FC30097504A /* Views */,
-				D362A1451F7B944D00E7AAA9 /* Main.storyboard */,
 				D3D7F3191FE0749C00C0B1B1 /* 2Password-Bridging-Header.h */,
 				D3D7F31A1FE0757600C0B1B1 /* 2Password.xcdatamodeld */,
 				D362A1481F7B944D00E7AAA9 /* Assets.xcassets */,
@@ -221,6 +243,18 @@
 				D362A1581F7B944D00E7AAA9 /* Info.plist */,
 			);
 			path = 2PasswordTests;
+			sourceTree = "<group>";
+		};
+		D3A68C8A1FE3AD1800147BE1 /* Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				D3A68C8B1FE3AD2800147BE1 /* CatalogueViewController.swift */,
+				D3A68C8D1FE3ADA000147BE1 /* MainCatalogueCellView.swift */,
+				D3A68C8F1FE3AF3500147BE1 /* CatalogueExpandedCellView.swift */,
+				D3A68C911FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.swift */,
+				D3A68C921FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.xib */,
+			);
+			path = Catalogue;
 			sourceTree = "<group>";
 		};
 		D3D7F3081FE0524900C0B1B1 /* FirstLaunch */ = {
@@ -344,7 +378,9 @@
 				D34736B81FD8759B00768071 /* FirstLaunch.storyboard in Resources */,
 				D362A14C1F7B944D00E7AAA9 /* LaunchScreen.storyboard in Resources */,
 				D362A1491F7B944D00E7AAA9 /* Assets.xcassets in Resources */,
+				D3A68C941FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.xib in Resources */,
 				D362A1471F7B944D00E7AAA9 /* Main.storyboard in Resources */,
+				D34722571FE3AB9A00DD8230 /* Main.xcassets in Resources */,
 				D34722521FE321E900DD8230 /* Unlock.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A68C931FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.swift in Sources */,
 				D3D930AB1FD748680097504A /* SelfSizingTableView.swift in Sources */,
 				D3D7F30E1FE0632900C0B1B1 /* SecurityEngine.swift in Sources */,
 				D34722491FE2FB0700DD8230 /* Models.swift in Sources */,
@@ -483,10 +520,13 @@
 				D3D7F3181FE0747E00C0B1B1 /* NSData+Encryption.m in Sources */,
 				D3D7F3141FE073A400C0B1B1 /* CoreDataStack.swift in Sources */,
 				D362A1421F7B944D00E7AAA9 /* AppDelegate.swift in Sources */,
+				D3A68C8C1FE3AD2800147BE1 /* CatalogueViewController.swift in Sources */,
 				D34722501FE321E400DD8230 /* UnlockViewController.swift in Sources */,
 				D347224C1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift in Sources */,
+				D3A68C8E1FE3ADA000147BE1 /* MainCatalogueCellView.swift in Sources */,
 				D3D7F3121FE0729500C0B1B1 /* PasswordHashStorage.swift in Sources */,
 				D34736BD1FD87D5C00768071 /* RegisterRouter.swift in Sources */,
+				D3A68C901FE3AF3500147BE1 /* CatalogueExpandedCellView.swift in Sources */,
 				D34736B61FD8758B00768071 /* FirstLaunchViewController.swift in Sources */,
 				D347224D1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift in Sources */,
 				D3C112701FD73EFA00BCBE59 /* MainRouter.swift in Sources */,

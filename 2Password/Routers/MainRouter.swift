@@ -39,7 +39,9 @@ class MainRouter {
     }
 
     private func beginMainScreenRouting() {
-        AppDelegate.shared.window?.rootViewController = UIViewController()
+        let mainSB = UIStoryboard(name: "Main", bundle: .main)
+        let tabbarController = mainSB.instantiateInitialViewController()
+        AppDelegate.shared.window?.rootViewController = tabbarController
     }
     
 }
