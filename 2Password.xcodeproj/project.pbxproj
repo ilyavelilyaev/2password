@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AA73DE98AB4885642C6D7FCF /* Pods_2Password.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADECAAE9415C6D862435D10 /* Pods_2Password.framework */; };
+		D30275A01FE4018A00C4E7E5 /* CatalogueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D302759F1FE4018A00C4E7E5 /* CatalogueViewModel.swift */; };
+		D30275A21FE4037B00C4E7E5 /* DatabaseFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30275A11FE4037B00C4E7E5 /* DatabaseFetcher.swift */; };
 		D34722491FE2FB0700DD8230 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34722481FE2FB0700DD8230 /* Models.swift */; };
 		D347224C1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224A1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift */; };
 		D347224D1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */; };
@@ -60,6 +62,8 @@
 		AEB468969705240BA72691F2 /* Pods-2Password.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2Password.release.xcconfig"; path = "Pods/Target Support Files/Pods-2Password/Pods-2Password.release.xcconfig"; sourceTree = "<group>"; };
 		C7223642196412B541D7F0B9 /* Pods-2Password.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2Password.debug.xcconfig"; path = "Pods/Target Support Files/Pods-2Password/Pods-2Password.debug.xcconfig"; sourceTree = "<group>"; };
 		CADECAAE9415C6D862435D10 /* Pods_2Password.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2Password.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D302759F1FE4018A00C4E7E5 /* CatalogueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueViewModel.swift; sourceTree = "<group>"; };
+		D30275A11FE4037B00C4E7E5 /* DatabaseFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseFetcher.swift; sourceTree = "<group>"; };
 		D34722481FE2FB0700DD8230 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		D347224A1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedDataItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedDataItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 				D3D7F30F1FE0719200C0B1B1 /* EncryptionTransformer.swift */,
 				D3D7F3111FE0729500C0B1B1 /* PasswordHashStorage.swift */,
 				D3D7F3131FE073A400C0B1B1 /* CoreDataStack.swift */,
+				D30275A11FE4037B00C4E7E5 /* DatabaseFetcher.swift */,
 				D34722471FE2FADD00DD8230 /* Models */,
 				D3D7F3151FE0747E00C0B1B1 /* NSData+Encryption */,
 				D34736B41FD8757100768071 /* ViewControllers */,
@@ -248,6 +253,7 @@
 		D3A68C8A1FE3AD1800147BE1 /* Catalogue */ = {
 			isa = PBXGroup;
 			children = (
+				D302759F1FE4018A00C4E7E5 /* CatalogueViewModel.swift */,
 				D3A68C8B1FE3AD2800147BE1 /* CatalogueViewController.swift */,
 				D3A68C8D1FE3ADA000147BE1 /* MainCatalogueCellView.swift */,
 				D3A68C8F1FE3AF3500147BE1 /* CatalogueExpandedCellView.swift */,
@@ -507,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30275A21FE4037B00C4E7E5 /* DatabaseFetcher.swift in Sources */,
 				D3A68C931FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.swift in Sources */,
 				D3D930AB1FD748680097504A /* SelfSizingTableView.swift in Sources */,
 				D3D7F30E1FE0632900C0B1B1 /* SecurityEngine.swift in Sources */,
@@ -530,6 +537,7 @@
 				D34736B61FD8758B00768071 /* FirstLaunchViewController.swift in Sources */,
 				D347224D1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift in Sources */,
 				D3C112701FD73EFA00BCBE59 /* MainRouter.swift in Sources */,
+				D30275A01FE4018A00C4E7E5 /* CatalogueViewModel.swift in Sources */,
 				D3D7F30C1FE062C700C0B1B1 /* ThankYouViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

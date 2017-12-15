@@ -14,6 +14,14 @@ enum StoredDataType: String {
     case creditCard = "CREDIT_CARD"
     case note = "SECURE_NOTE"
 
+    var readableType: String {
+        switch self {
+        case .login: return "Logins"
+        case .creditCard: return "Credit cards"
+        case .note: return "Secure notes"
+        }
+    }
+
 }
 
 protocol StoredData: Codable {
@@ -21,6 +29,8 @@ protocol StoredData: Codable {
     var fields: [(String, String)] { get }
     var showingTitle: String { get }
     var sensitiveFields: [String] { get }
+
+    func saveDataItem() -> SavedDataItem
 
 }
 
@@ -48,6 +58,20 @@ struct LoginData: StoredData {
 
     var sensitiveFields: [String] {
         return [FieldNames.password.rawValue]
+    }
+
+    func saveDataItem() -> SavedDataItem {
+        var item: SavedDataItem!
+        CoreDataStack.shared.privateMOC.performAndWait {
+            let entity = NSEntityDescription.insertNewObject(forEntityName: "SavedDataItem", into: CoreDataStack.shared.privateMOC) as! SavedDataItem
+            entity.content = try! JSONEncoder().encode(self) as NSData
+            entity.type = StoredDataType.login.rawValue
+            entity.id = UUID()
+            entity.order = 0
+            try! CoreDataStack.shared.privateMOC.save()
+            item = entity
+        }
+        return item
     }
 
 }
@@ -85,6 +109,20 @@ struct CreditCardData: StoredData {
         return [FieldNames.pin.rawValue]
     }
 
+    func saveDataItem() -> SavedDataItem {
+        var item: SavedDataItem!
+        CoreDataStack.shared.privateMOC.performAndWait {
+            let entity = NSEntityDescription.insertNewObject(forEntityName: "SavedDataItem", into: CoreDataStack.shared.privateMOC) as! SavedDataItem
+            entity.content = try! JSONEncoder().encode(self) as NSData
+            entity.type = StoredDataType.creditCard.rawValue
+            entity.id = UUID()
+            entity.order = 0
+            try? CoreDataStack.shared.privateMOC.save()
+            item = entity
+        }
+        return item
+    }
+
 }
 
 struct SecureNoteData: StoredData {
@@ -108,6 +146,20 @@ struct SecureNoteData: StoredData {
 
     var sensitiveFields: [String] {
         return []
+    }
+
+    func saveDataItem() -> SavedDataItem {
+        var item: SavedDataItem!
+        CoreDataStack.shared.privateMOC.performAndWait {
+            let entity = NSEntityDescription.insertNewObject(forEntityName: "SavedDataItem", into: CoreDataStack.shared.privateMOC) as! SavedDataItem
+            entity.content = try! JSONEncoder().encode(self) as NSData
+            entity.type = StoredDataType.note.rawValue
+            entity.id = UUID()
+            entity.order = 0
+            try? CoreDataStack.shared.privateMOC.save()
+            item = entity
+        }
+        return item
     }
 
 }

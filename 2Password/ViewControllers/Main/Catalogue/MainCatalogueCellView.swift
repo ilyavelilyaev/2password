@@ -12,6 +12,14 @@ import SnapKit
 class MainCatalogueCellView: UIView {
 
     var tapCallback: () -> Void = { }
+    var title: String {
+        get {
+            return titleLabel.text ?? ""
+        }
+        set {
+            titleLabel.text = newValue
+        }
+    }
 
     private var titleLabel: UILabel = {
         let label = UILabel()
@@ -52,6 +60,10 @@ class MainCatalogueCellView: UIView {
             make.left.equalToSuperview().inset(16)
             make.height.equalTo(16)
             make.width.equalTo(9)
+        }
+
+        snp.makeConstraints { (make) in
+            make.height.equalTo(54)
         }
 
         titleLabel.isUserInteractionEnabled = false

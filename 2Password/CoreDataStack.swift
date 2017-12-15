@@ -38,8 +38,34 @@ class CoreDataStack {
         let modelName = "2Password"
         let modelURL = Bundle.main.url(forResource: modelName, withExtension: "momd")!
         model = NSManagedObjectModel(contentsOf: modelURL)!
+//        int cache = 2345;
+//        EncryptedStoreOptions options;
+//        options.passphrase = "SOME_PASSWORD";
+//        options.database_location = (char*)[[databaseURL description] UTF8String];
+//        options.cache_size = &cache;
+//
+//        coordinator = [EncryptedStore makeStoreWithStructOptions:&options managedObjectModel:[self managedObjectModel]];
+//        coordinator = [EncryptedStore makeStoreWithOptions:@{
+//            EncryptedStorePassphraseKey : @"SOME_PASSWORD",
+//            EncryptedStoreDatabaseLocation : [databaseURL description],
+//            EncryptedStoreCacheSize : @(2345)}
+//            managedObjectModel:[self managedObjectModel]];
 
-        coordinator = EncryptedStore.make(model, passcode: password)!
+//        coordinator = EncryptedStore.make(options: [
+//            EncryptedStorePassphraseKey: password,
+//            EncryptedStoreDatabaseLocation: persistentStoreURL.description,
+//            EncryptedStoreCacheSize: NSNumber(value: 2345)
+//            ], managedObjectModel: model)!
+
+//        coordinator = EncryptedStore.make(model, passcode: password)!
+        let coordinator = NSPersistentStoreCoordinator.init(managedObjectModel: model)
+        do {
+            try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: persistentStoreURL, options: [NSMigratePersistentStoresAutomaticallyOption: true, NSInferMappingModelAutomaticallyOption: true])
+        } catch {
+            fatalError("Error migrating store: \(error)")
+        }
+
+        self.coordinator = coordinator
 
         privateMOC = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
 

@@ -25,6 +25,10 @@ final class SecurityEngine {
             return false
         }
         CoreDataStack.instantiate(password: password)
+
+        let login = LoginData(login: "123456", password: "p123456", siteName: "sitename")
+        login.saveDataItem()
+        
         return true
     }
 
