@@ -10,6 +10,8 @@
 		AA73DE98AB4885642C6D7FCF /* Pods_2Password.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADECAAE9415C6D862435D10 /* Pods_2Password.framework */; };
 		D30275A01FE4018A00C4E7E5 /* CatalogueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D302759F1FE4018A00C4E7E5 /* CatalogueViewModel.swift */; };
 		D30275A21FE4037B00C4E7E5 /* DatabaseFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30275A11FE4037B00C4E7E5 /* DatabaseFetcher.swift */; };
+		D34423221FE4179C0092A289 /* SingleEntry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34423211FE4179C0092A289 /* SingleEntry.storyboard */; };
+		D34423241FE419530092A289 /* SingleEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34423231FE419530092A289 /* SingleEntryViewController.swift */; };
 		D34722491FE2FB0700DD8230 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34722481FE2FB0700DD8230 /* Models.swift */; };
 		D347224C1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224A1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift */; };
 		D347224D1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */; };
@@ -26,6 +28,8 @@
 		D362A1491F7B944D00E7AAA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D362A1481F7B944D00E7AAA9 /* Assets.xcassets */; };
 		D362A14C1F7B944D00E7AAA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D362A14A1F7B944D00E7AAA9 /* LaunchScreen.storyboard */; };
 		D362A1571F7B944D00E7AAA9 /* _PasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362A1561F7B944D00E7AAA9 /* _PasswordTests.swift */; };
+		D384263F1FE41AA000E42BBB /* SingleEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D384263D1FE41AA000E42BBB /* SingleEntryTableViewCell.swift */; };
+		D38426401FE41AA000E42BBB /* SingleEntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D384263E1FE41AA000E42BBB /* SingleEntryTableViewCell.xib */; };
 		D3A68C8C1FE3AD2800147BE1 /* CatalogueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A68C8B1FE3AD2800147BE1 /* CatalogueViewController.swift */; };
 		D3A68C8E1FE3ADA000147BE1 /* MainCatalogueCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A68C8D1FE3ADA000147BE1 /* MainCatalogueCellView.swift */; };
 		D3A68C901FE3AF3500147BE1 /* CatalogueExpandedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A68C8F1FE3AF3500147BE1 /* CatalogueExpandedCellView.swift */; };
@@ -64,6 +68,8 @@
 		CADECAAE9415C6D862435D10 /* Pods_2Password.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2Password.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D302759F1FE4018A00C4E7E5 /* CatalogueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueViewModel.swift; sourceTree = "<group>"; };
 		D30275A11FE4037B00C4E7E5 /* DatabaseFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseFetcher.swift; sourceTree = "<group>"; };
+		D34423211FE4179C0092A289 /* SingleEntry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleEntry.storyboard; sourceTree = "<group>"; };
+		D34423231FE419530092A289 /* SingleEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleEntryViewController.swift; sourceTree = "<group>"; };
 		D34722481FE2FB0700DD8230 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		D347224A1FE31D3900DD8230 /* SavedDataItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedDataItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D347224B1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedDataItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -85,6 +91,8 @@
 		D362A1521F7B944D00E7AAA9 /* 2PasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2PasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D362A1561F7B944D00E7AAA9 /* _PasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _PasswordTests.swift; sourceTree = "<group>"; };
 		D362A1581F7B944D00E7AAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D384263D1FE41AA000E42BBB /* SingleEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleEntryTableViewCell.swift; sourceTree = "<group>"; };
+		D384263E1FE41AA000E42BBB /* SingleEntryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleEntryTableViewCell.xib; sourceTree = "<group>"; };
 		D3A68C8B1FE3AD2800147BE1 /* CatalogueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueViewController.swift; sourceTree = "<group>"; };
 		D3A68C8D1FE3ADA000147BE1 /* MainCatalogueCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCatalogueCellView.swift; sourceTree = "<group>"; };
 		D3A68C8F1FE3AF3500147BE1 /* CatalogueExpandedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueExpandedCellView.swift; sourceTree = "<group>"; };
@@ -148,6 +156,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D34423201FE4177C0092A289 /* SingleEntryViewing */ = {
+			isa = PBXGroup;
+			children = (
+				D34423211FE4179C0092A289 /* SingleEntry.storyboard */,
+				D34423231FE419530092A289 /* SingleEntryViewController.swift */,
+				D384263D1FE41AA000E42BBB /* SingleEntryTableViewCell.swift */,
+				D384263E1FE41AA000E42BBB /* SingleEntryTableViewCell.xib */,
+			);
+			path = SingleEntryViewing;
+			sourceTree = "<group>";
+		};
 		D34722471FE2FADD00DD8230 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +199,7 @@
 		D34736B41FD8757100768071 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D34423201FE4177C0092A289 /* SingleEntryViewing */,
 				D34722551FE3AB3500DD8230 /* Main */,
 				D347224E1FE321CD00DD8230 /* Unlock */,
 				D3D7F3081FE0524900C0B1B1 /* FirstLaunch */,
@@ -382,8 +402,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34736B81FD8759B00768071 /* FirstLaunch.storyboard in Resources */,
+				D34423221FE4179C0092A289 /* SingleEntry.storyboard in Resources */,
 				D362A14C1F7B944D00E7AAA9 /* LaunchScreen.storyboard in Resources */,
 				D362A1491F7B944D00E7AAA9 /* Assets.xcassets in Resources */,
+				D38426401FE41AA000E42BBB /* SingleEntryTableViewCell.xib in Resources */,
 				D3A68C941FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.xib in Resources */,
 				D362A1471F7B944D00E7AAA9 /* Main.storyboard in Resources */,
 				D34722571FE3AB9A00DD8230 /* Main.xcassets in Resources */,
@@ -514,6 +536,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30275A21FE4037B00C4E7E5 /* DatabaseFetcher.swift in Sources */,
+				D34423241FE419530092A289 /* SingleEntryViewController.swift in Sources */,
 				D3A68C931FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.swift in Sources */,
 				D3D930AB1FD748680097504A /* SelfSizingTableView.swift in Sources */,
 				D3D7F30E1FE0632900C0B1B1 /* SecurityEngine.swift in Sources */,
@@ -524,6 +547,7 @@
 				D3D7F3101FE0719200C0B1B1 /* EncryptionTransformer.swift in Sources */,
 				D3D930A91FD73FE20097504A /* GradientButton.swift in Sources */,
 				D3D7F30A1FE0532B00C0B1B1 /* CreatePasswordViewController.swift in Sources */,
+				D384263F1FE41AA000E42BBB /* SingleEntryTableViewCell.swift in Sources */,
 				D3D7F3181FE0747E00C0B1B1 /* NSData+Encryption.m in Sources */,
 				D3D7F3141FE073A400C0B1B1 /* CoreDataStack.swift in Sources */,
 				D362A1421F7B944D00E7AAA9 /* AppDelegate.swift in Sources */,
