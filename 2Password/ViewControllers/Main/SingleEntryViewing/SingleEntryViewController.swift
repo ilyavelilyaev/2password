@@ -62,6 +62,12 @@ class SingleEntryViewController: UIViewController {
 
         let nib = UINib(nibName: "SingleEntryTableViewCell", bundle: .main)
         tableView.register(nib, forCellReuseIdentifier: "SingleEntryTableViewCell")
+
+        let generatePasswordButton = GradientButton(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 53))
+        generatePasswordButton.title = "Generate password"
+        generatePasswordButton.addTarget(self, action: #selector(generatePressed), for: .touchUpInside)
+
+        tableView.tableFooterView = generatePasswordButton
     }
 
     private func configureRightItem() {
@@ -97,6 +103,11 @@ class SingleEntryViewController: UIViewController {
         self.mode = .edit
         configureRightItem()
         tableView.reloadData()
+    }
+
+    @objc private func generatePressed() {
+        let genVC = PasswordGeneratorViewController.instantiate()
+        navigationController?.pushViewController(genVC, animated: true)
     }
 
 }

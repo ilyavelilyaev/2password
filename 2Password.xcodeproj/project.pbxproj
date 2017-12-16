@@ -30,6 +30,9 @@
 		D362A1571F7B944D00E7AAA9 /* _PasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362A1561F7B944D00E7AAA9 /* _PasswordTests.swift */; };
 		D384263F1FE41AA000E42BBB /* SingleEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D384263D1FE41AA000E42BBB /* SingleEntryTableViewCell.swift */; };
 		D38426401FE41AA000E42BBB /* SingleEntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D384263E1FE41AA000E42BBB /* SingleEntryTableViewCell.xib */; };
+		D38426421FE520A700E42BBB /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38426411FE520A700E42BBB /* PasswordGenerator.swift */; };
+		D3903BD31FE5228500810EE0 /* PasswordGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3903BD21FE5228500810EE0 /* PasswordGenerator.storyboard */; };
+		D3903BD51FE5238C00810EE0 /* PasswordGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3903BD41FE5238C00810EE0 /* PasswordGeneratorViewController.swift */; };
 		D3A68C8C1FE3AD2800147BE1 /* CatalogueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A68C8B1FE3AD2800147BE1 /* CatalogueViewController.swift */; };
 		D3A68C8E1FE3ADA000147BE1 /* MainCatalogueCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A68C8D1FE3ADA000147BE1 /* MainCatalogueCellView.swift */; };
 		D3A68C901FE3AF3500147BE1 /* CatalogueExpandedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A68C8F1FE3AF3500147BE1 /* CatalogueExpandedCellView.swift */; };
@@ -93,6 +96,9 @@
 		D362A1581F7B944D00E7AAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D384263D1FE41AA000E42BBB /* SingleEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleEntryTableViewCell.swift; sourceTree = "<group>"; };
 		D384263E1FE41AA000E42BBB /* SingleEntryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleEntryTableViewCell.xib; sourceTree = "<group>"; };
+		D38426411FE520A700E42BBB /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
+		D3903BD21FE5228500810EE0 /* PasswordGenerator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PasswordGenerator.storyboard; sourceTree = "<group>"; };
+		D3903BD41FE5238C00810EE0 /* PasswordGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorViewController.swift; sourceTree = "<group>"; };
 		D3A68C8B1FE3AD2800147BE1 /* CatalogueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueViewController.swift; sourceTree = "<group>"; };
 		D3A68C8D1FE3ADA000147BE1 /* MainCatalogueCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCatalogueCellView.swift; sourceTree = "<group>"; };
 		D3A68C8F1FE3AF3500147BE1 /* CatalogueExpandedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueExpandedCellView.swift; sourceTree = "<group>"; };
@@ -191,6 +197,8 @@
 			children = (
 				D362A1451F7B944D00E7AAA9 /* Main.storyboard */,
 				D34722561FE3AB9A00DD8230 /* Main.xcassets */,
+				D3903BD11FE5227700810EE0 /* Password Generator */,
+				D34423201FE4177C0092A289 /* SingleEntryViewing */,
 				D3A68C8A1FE3AD1800147BE1 /* Catalogue */,
 			);
 			path = Main;
@@ -199,10 +207,10 @@
 		D34736B41FD8757100768071 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D34423201FE4177C0092A289 /* SingleEntryViewing */,
 				D34722551FE3AB3500DD8230 /* Main */,
 				D347224E1FE321CD00DD8230 /* Unlock */,
 				D3D7F3081FE0524900C0B1B1 /* FirstLaunch */,
+				D38426411FE520A700E42BBB /* PasswordGenerator.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -268,6 +276,15 @@
 				D362A1581F7B944D00E7AAA9 /* Info.plist */,
 			);
 			path = 2PasswordTests;
+			sourceTree = "<group>";
+		};
+		D3903BD11FE5227700810EE0 /* Password Generator */ = {
+			isa = PBXGroup;
+			children = (
+				D3903BD21FE5228500810EE0 /* PasswordGenerator.storyboard */,
+				D3903BD41FE5238C00810EE0 /* PasswordGeneratorViewController.swift */,
+			);
+			path = "Password Generator";
 			sourceTree = "<group>";
 		};
 		D3A68C8A1FE3AD1800147BE1 /* Catalogue */ = {
@@ -402,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34736B81FD8759B00768071 /* FirstLaunch.storyboard in Resources */,
+				D3903BD31FE5228500810EE0 /* PasswordGenerator.storyboard in Resources */,
 				D34423221FE4179C0092A289 /* SingleEntry.storyboard in Resources */,
 				D362A14C1F7B944D00E7AAA9 /* LaunchScreen.storyboard in Resources */,
 				D362A1491F7B944D00E7AAA9 /* Assets.xcassets in Resources */,
@@ -535,6 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38426421FE520A700E42BBB /* PasswordGenerator.swift in Sources */,
 				D30275A21FE4037B00C4E7E5 /* DatabaseFetcher.swift in Sources */,
 				D34423241FE419530092A289 /* SingleEntryViewController.swift in Sources */,
 				D3A68C931FE3AF6E00147BE1 /* ExpandedCatalogueTableViewCell.swift in Sources */,
@@ -561,6 +580,7 @@
 				D34736B61FD8758B00768071 /* FirstLaunchViewController.swift in Sources */,
 				D347224D1FE31D3900DD8230 /* SavedDataItem+CoreDataProperties.swift in Sources */,
 				D3C112701FD73EFA00BCBE59 /* MainRouter.swift in Sources */,
+				D3903BD51FE5238C00810EE0 /* PasswordGeneratorViewController.swift in Sources */,
 				D30275A01FE4018A00C4E7E5 /* CatalogueViewModel.swift in Sources */,
 				D3D7F30C1FE062C700C0B1B1 /* ThankYouViewController.swift in Sources */,
 			);
