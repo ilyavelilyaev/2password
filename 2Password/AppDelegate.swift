@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         AppDelegate.shared = self
+        MainRouter.shared.beginRouting()
 
         return true
     }
@@ -31,10 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
+        MainRouter.shared.beginRouting()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        MainRouter.shared.beginRouting()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

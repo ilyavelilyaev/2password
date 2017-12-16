@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class MainRouter {
 
@@ -25,7 +26,12 @@ class MainRouter {
     private func beginUnlockRouting() {
         let unlockVC = UnlockViewController.instantiate { [weak self] in
             guard let sself = self else { return }
-            sself.beginMainScreenRouting()
+            LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Unlock") { success, error in
+                DispatchQueue.main.async { if success {
+                    sself.beginMainScreenRouting()
+                    }
+                }
+            }
         }
         let nvc = UINavigationController(rootViewController: unlockVC)
         AppDelegate.shared.window?.rootViewController = nvc
