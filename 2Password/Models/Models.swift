@@ -22,6 +22,14 @@ enum StoredDataType: String {
         }
     }
 
+    var fields: [String] {
+        switch self {
+        case .login: return [LoginData.FieldNames.siteName.rawValue, LoginData.FieldNames.login.rawValue, LoginData.FieldNames.password.rawValue]
+        case .creditCard: return [CreditCardData.FieldNames.cardHolderName.rawValue, CreditCardData.FieldNames.vendor.rawValue, CreditCardData.FieldNames.number.rawValue, CreditCardData.FieldNames.expiryDate.rawValue, CreditCardData.FieldNames.pin.rawValue]
+        case .note: return [SecureNoteData.FieldNames.noteName.rawValue, SecureNoteData.FieldNames.note.rawValue]
+        }
+    }
+
 }
 
 protocol StoredData: Codable {
@@ -30,7 +38,10 @@ protocol StoredData: Codable {
     var showingTitle: String { get }
     var sensitiveFields: [String] { get }
 
+    func encode() -> Data
+
     func saveDataItem() -> SavedDataItem
+    mutating func set(value: String, for field: String)
 
 }
 
@@ -60,6 +71,10 @@ struct LoginData: StoredData {
         return [FieldNames.password.rawValue]
     }
 
+    func encode() -> Data {
+        return try! JSONEncoder().encode(self)
+    }
+
     func saveDataItem() -> SavedDataItem {
         var item: SavedDataItem!
         CoreDataStack.shared.privateMOC.performAndWait {
@@ -72,6 +87,15 @@ struct LoginData: StoredData {
             item = entity
         }
         return item
+    }
+
+    mutating func set(value: String, for field: String) {
+        guard let field = FieldNames(rawValue: field) else { return }
+        switch field {
+        case .login: self.login = value
+        case .password: self.password = value
+        case .siteName: self.siteName = value
+        }
     }
 
 }
@@ -109,6 +133,10 @@ struct CreditCardData: StoredData {
         return [FieldNames.pin.rawValue]
     }
 
+    func encode() -> Data {
+        return try! JSONEncoder().encode(self)
+    }
+
     func saveDataItem() -> SavedDataItem {
         var item: SavedDataItem!
         CoreDataStack.shared.privateMOC.performAndWait {
@@ -121,6 +149,17 @@ struct CreditCardData: StoredData {
             item = entity
         }
         return item
+    }
+
+    mutating func set(value: String, for field: String) {
+        guard let field = FieldNames(rawValue: field) else { return }
+        switch field {
+        case .cardHolderName: self.cardHolderName = value
+        case .vendor: self.vendor = value
+        case .number: self.number = value
+        case .expiryDate: self.expiryDate = value
+        case .pin: self.pin = value
+        }
     }
 
 }
@@ -148,6 +187,10 @@ struct SecureNoteData: StoredData {
         return []
     }
 
+    func encode() -> Data {
+        return try! JSONEncoder().encode(self)
+    }
+    
     func saveDataItem() -> SavedDataItem {
         var item: SavedDataItem!
         CoreDataStack.shared.privateMOC.performAndWait {
@@ -162,4 +205,11 @@ struct SecureNoteData: StoredData {
         return item
     }
 
+    mutating func set(value: String, for field: String) {
+        guard let field = FieldNames(rawValue: field) else { return }
+        switch field {
+        case .note: self.note = value
+        case .noteName: self.noteName = value
+        }
+    }
 }

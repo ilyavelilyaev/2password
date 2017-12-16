@@ -67,8 +67,32 @@ class CatalogueViewController: UIViewController {
     }
 
     private func show(item: SavedDataItem) {
-        
+        let singleEntryVC = SingleEntryViewController.instantiate(entry: item, mode: .view)
+
+        navigationController?.pushViewController(singleEntryVC, animated: true)
     }
     
+    @IBAction func createNewPressed(_ sender: Any) {
+        let alert = UIAlertController(title: "Select Type of data to create", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Login", style: .default, handler: { (_) in
+            let singleEntryVC = SingleEntryViewController.instantiate(entry: nil, mode: .create(type: .login))
+
+            self.navigationController?.pushViewController(singleEntryVC, animated: true)
+        }))
+
+        alert.addAction(UIAlertAction(title: "Credit card", style: .default, handler: { (_) in
+            let singleEntryVC = SingleEntryViewController.instantiate(entry: nil, mode: .create(type: .creditCard))
+
+            self.navigationController?.pushViewController(singleEntryVC, animated: true)
+        }))
+
+        alert.addAction(UIAlertAction(title: "Note", style: .default, handler: { (_) in
+            let singleEntryVC = SingleEntryViewController.instantiate(entry: nil, mode: .create(type: .note))
+
+            self.navigationController?.pushViewController(singleEntryVC, animated: true)
+        }))
+
+        present(alert, animated: true, completion: nil)
+    }
 
 }
